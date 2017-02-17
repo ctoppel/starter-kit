@@ -1,0 +1,33 @@
+Open terminal and write following commands:
+
+createdb [database name]
+psql postgres / [database name]
+create user [username];
+alter user [username] with password '123456’;
+grant all privileges on database [database] to [username];
+
+———-
+
+Use GUI(pgAdmin(local), elephantSQL(online)) or CLI(from root with sql running): psql -d [database] -U [username]
+
+Use query to insert rows into database(use single quotes and remember that in columns reserved words and camelCase words must be put into quotes):
+
+INSERT INTO [tableName]([col1], [col2], ...) VALUES('[val1]', '[val2]');
+
+————
+
+Put pgConnection.js file into server folder in project:
+
+const Sequelize = require('sequelize');
+
+const connection = new Sequelize('postgres://[username]:[password]@[url]:5432/[database]’);
+
+module.exports = connection;
+
+————
+
+Create models folder in server folder and place models(schemas) to create columns to be used in a table — see example in models folder
+
+————
+
+Create controllers in controllers folder in server folder and place middlewares to read and write data (create rows and access them) — see example in controllers folder

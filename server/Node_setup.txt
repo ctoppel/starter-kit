@@ -1,0 +1,7 @@
+NODE SETUP
+
+For new project run ‘npm init’ to create node server
+
+Install any dependencies using ‘npm install —-save [dependency]’ for anything you want saved as regular and ‘npm install —-save-dev [dependency]’ for anything you want saved as development. (If you have a package.json file complete with dependencies run ‘npm install’ to install dependencies listed in that file)
+
+Run ‘node [server file]’ to start server, or ‘nodemon [server file]’ if using nodemon. Can also be put in as a script in your package.json file - see example package.json file

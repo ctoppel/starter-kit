@@ -1,0 +1,7 @@
+Install webpack globally to use ‘webpack’ from the command line
+
+Enter correct starting points of top-level file and bundle location (default seen in example)
+
+Run ‘webpack’ from the command line (from root directory of project) to bundle into bundle.js file (distilled folder)
+
+Run ‘webpack -w [top-level file] [bundle file]’ (from root directory of project) to watch files and not need to rebundle each time. Can put as script in package.json file or run directly from command line
